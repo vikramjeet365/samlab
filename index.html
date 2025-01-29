@@ -1,63 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Spatial Analysis and Modelling Laboratory (SAM Lab) website coming soon">
-    <title>SAM Lab - Coming Soon</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, #1e3c72, #2a5298);
-            color: #fff;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .container {
-            max-width: 600px;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.6);
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-        .logo {
-            margin-bottom: 20px;
-        }
-
-        .logo img {
-            max-width: 100px;
-        }
-
-        .footer {
-            font-size: 0.9em;
-            margin-top: 20px;
-            opacity: 0.8;
-        }
-    </style>
+    <title>SAM Lab - IIT Kharagpur</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to SAM Lab</h1>
-        <p>The Spatial Analysis and Modelling Laboratory (SAM Lab) is a leading research group at the Centre for Ocean, River, Atmosphere, and Land Sciences (CORAL), IIT Kharagpur.</p>
-        <p>Our website is currently under construction. Stay tuned for updates!</p>
-        <div class="footer">&copy; 2024 SAM Lab, IIT Kharagpur. All rights reserved.</div>
-    </div>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>SAM Lab</h1>
+            <nav>
+                <div class="hamburger" id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2><br/>Welcome to <br/> Spatial Analysis and Modelling Laboratory</h2>
+            <p>Exploring the frontiers of geospatial technology and ecological modelling.</p>
+            <a href="aboutus.html" class="btn">Learn More</a>
+        </div>
+    </section>
+    
+    <!-- Currently Ongoing -->
+    <section id="current-section" class="current-section">
+        <div class="container">
+        <h2>Currently Ongoing</h2>
+        <p>
+            <h3>NPTEL course on 
+                <span class="highlight">Sustainable Mining And Geoinformation</span></h3>
+                <strong>By Prof. M. D. Behera & Prof. B.K. Prusty   |   IIT Kharagpur</strong>
+        </p>
+        <p>
+            The course Sustainable Mining and Geoinformation offers a comprehensive understanding of integrating geospatial technologies and sustainable practices in mining to align with India’s Sustainable Development Goals (SDG) as envisioned by NITI Aayog.
+        </p>
+        <a href="https://onlinecourses.nptel.ac.in/noc25_ge32/preview" class="btn" target="_blank">Visit Course Page</a>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>SAM Lab is a leading research laboratory at the Centre for Ocean, River, Atmosphere, and Land Sciences (CORAL), IIT Kharagpur. Led by Dr. Mukunda Dev Behera, the lab focuses on geospatial analysis and ecological modelling.</p>
+            <h3>Our Research Focus</h3>
+            <ul>
+                <li>Species Distribution Model / Ecological Niche Model</li>
+                <li>Species Community Analysis</li>
+                <li>Landscape Ecological Models</li>
+                <li>Geo-statistics & Causality</li>
+                <li>GIS & Image Processing</li>
+                <li>Soil and Water Modelling</li>
+                <li>Vegetation Carbon Dynamics</li>
+                <li>Forest Fire Modelling</li>
+                <li>LiDAR & TLS Analysis</li>
+                <li>AI / ML / DL Applications</li>
+                <li>Climate Modelling</li>
+                <li>Ecosystem Services Evaluation</li>
+                <li>Radiative Transfer Models (RTM)</li>
+                <li>Carbon Accounting</li>
+            </ul>
+            <a href="aboutus.html" class="btn" target="_blank"> Explore our Work</a>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <p>Our team comprises dedicated researchers, PhD scholars, and distinguished alumni contributing to cutting-edge geospatial science.</p>
+            <a href="team.html" class="btn" target="_blank">See our Team</a>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications">
+        <div class="container">
+            <h2>Publications</h2>
+            <p>Explore our research publications that contribute to the fields of remote sensing, geospatial analysis, and ecological modelling.</p>
+            <a href="publications.html" class="btn" target="_blank">See Publications</a>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p><strong>Address: </strong>Spatial Analysis and Modelling Laboratory, J C Ghosh and P C Ray Twin Science Block, Indian Institute of Technology Kharagpur, Kharagpur, Paschim Medinipur, West Bengal, India - 721302</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 SAM Lab, Centre for Ocean, River, Atmosphere and Land Sciences (CORAL), IIT Kharagpur. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

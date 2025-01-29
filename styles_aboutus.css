@@ -1,0 +1,225 @@
+/* CSS for SAM Lab Website */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background: rgb(0, 51, 102);
+    color: #ffffff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+header ul.hidden {
+    display: none;
+    flex-direction: column;
+    background: #35424a;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 200px;
+    border: 1px solid #e8491d;
+}
+
+header ul.hidden li {
+    text-align: center;
+    padding: 10px 0;
+}
+
+header ul.hidden li a {
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+}
+
+header ul li {
+    padding: 0 20px;
+}
+
+header h1 {
+    color: rgb(255, 255, 0);
+    float: left;
+    margin: 0;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    background: #ffffff;
+    height: 3px;
+    width: 100%;
+}
+
+
+/* About Us Section */
+#about {
+    background: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 32px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Research Tools Section */
+#research-tools {
+    background: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+
+
+
+/* Research Tools Section Styling */
+
+.research-tool {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#research-tools h2 {
+    font-size: 28px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.research-tool-title {
+    color: #0056a6; /* Blue color */
+    font-size: 22px; /* Larger font size */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.research-tool-description {
+    font-size: 18px;
+    color: #000000; /* Standard text color */
+}
+
+
+
+/* Footer Section */
+footer {
+    background: rgb(0, 51, 102);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Research Tools Section Styling */
+.research-tool {
+    text-align: center;
+    background: #f8f9fa; /* Light background for contrast */
+    border: 2px solid #0056a6; /* Blue border */
+    border-radius: 15px; /* Rounded edges */
+    padding: 20px;
+    margin: 15px auto; /* Centering the box */
+    max-width: 500px; /* Prevents too much horizontal stretching */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: transform 0.2s ease-in-out;
+}
+
+.research-tool:hover {
+    transform: scale(1.02); /* Slight zoom effect without cutting edges */
+}
+
+.research-tool-title {
+    color: #0056a6; /* Blue color */
+    font-size: 22px; /* Larger font size */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.research-tool-description {
+    font-size: 18px;
+    color: #000000; /* Standard text color */
+    margin-top: 5px;
+}
+
+
+
+/* Show navigation links on larger screens */
+@media screen and (min-width: 769px) {
+    header ul {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
+/* Hamburger menu for smaller screens */
+@media screen and (max-width: 768px) {
+    header ul {
+        display: none;
+    }
+
+    header ul.hidden {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}

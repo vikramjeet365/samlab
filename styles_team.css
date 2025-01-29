@@ -1,0 +1,225 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background: rgb(0, 51, 102);
+    color: #ffffff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+header ul.hidden {
+    display: none;
+    flex-direction: column;
+    background: #35424a;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 200px;
+    border: 1px solid #e8491d;
+}
+
+header ul.hidden li {
+    text-align: center;
+    padding: 10px 0;
+}
+
+header ul.hidden li a {
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+}
+
+header ul li {
+    padding: 0 20px;
+}
+
+header h1 {
+    color: rgb(255, 255, 0);
+    float: left;
+    margin: 0;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    background: #ffffff;
+    height: 3px;
+    width: 100%;
+}
+
+/* General Styling for Team Section */
+#team-members {
+    background: #f9f9f9;
+    padding: 2rem 0;
+}
+
+#team-members h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.team-grid {
+    display: flex;
+    flex-direction: column; /* Ensure members stack vertically */
+    gap: 2rem; /* Add space between team members */
+}
+
+/* Individual Team Member Styling */
+.team-member {
+    display: flex; /* Horizontal layout: image + details */
+    align-items: center; /* Center-align image and details */
+    gap: 1rem; /* Add space between image and details */
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.team-member img {
+    width: 200px;
+    object-fit: cover;
+    align-self: center; /* Ensure image is vertically centered */
+    margin-left: 50px; /* Add gap on the left */
+    margin-right: 50px; /* Add gap on the right */
+}
+
+.team-member .details {
+    display: flex;
+    flex-direction: column; /* Stack text elements vertically */
+    align-items: flex-start; /* Align text to the left */
+    gap: 0.5rem; /* Add spacing between text items */
+}
+
+.team-member h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 255);
+}
+
+.team-member p {
+    margin: 0;
+    line-height: 1.6; /* Add spacing between lines for readability */
+}
+
+.team-member ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.team-member ul li {
+    margin: 0.3rem 0; /* Add slight spacing between list items */
+}
+
+
+
+/* Global */
+
+section {
+    padding: 20px 0;
+    /* border-bottom: #cccccc 1px solid; */
+}
+
+section h3 {
+    font-size: 21px;
+    color: #35424a;
+}
+
+section h2 {
+    font-size: 28px;
+    color: #000000;
+}
+
+/* Footer Section */
+
+
+footer {
+    background: rgb(0, 51, 102);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+
+/* Show navigation links on larger screens */
+@media screen and (min-width: 769px) {
+    header ul {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
+/* Hamburger menu for smaller screens */
+@media screen and (max-width: 768px) {
+    header ul {
+        display: none;
+    }
+
+    header ul.hidden {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
